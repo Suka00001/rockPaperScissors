@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper Scissors</title>
+    <link rel="stylesheet" href="rockPaperScissor.css">
+  
+</head>
+<body>
+    <header>
+        <h1>
+            Rock Paper Scissors
+        </h1>
+    </header>
+<div id="congratulationsModal" class="modal">
+    <div class="modal-content">
+      <h2>Congratulations!</h2>
+      <p id="modalMessage"></p>
+      <button id="restartButton" onclick="restartGame()">Restart</button>
+      <button id="ExitButton" onclick="exitgame()">Exit</button>
+
+    </div>
+  </div>
+  
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+    <div class="result">
+        <p>Paper Covers rock.You Win !</p>
+    </div>
+    <div class="choices">
+      <div class="choice" id="r"><img style="height:80px ;" src="Screenshot 2023-09-01 080034.png" alt="rock"></div> 
+    
+    
+        <div class="choice" id="p"><img  style="height:80px ;"src="Screenshot 2023-09-01 080214.png" alt="paper"></div> 
+    
+        <div class="choice" id="s"><img  style="height:80px ;" src="Screenshot 2023-09-01 080200.png" alt="scissors"></div> 
+      </div>
+      <p id="action-message"> Make your Move</p>
+      <div class="result">
+        
+    </div>
+      <script src="rockPaperScissors.js"></script>
+      <p id="instruction">You need 10 Points first to WIN!!!</p>
+</body>
+</html>
